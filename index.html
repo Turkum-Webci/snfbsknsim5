@@ -11,7 +11,7 @@ background-image:url("snfbsknrsm1.png");
 background-size:cover;
 background-repeat: no-repeat;
         }
-        #ayr1, #kzd2, #sonksm{
+        #ayr1, #kzd2, #sonksm, #strateji{
             display: none;
         }
         #a1,#a2,#a3,#a4,#a5,#a6,#a7,#a8, #a9, #a10, #tnfs, #dstk1, #a11{
@@ -97,7 +97,7 @@ background-repeat: no-repeat;
         //}
         var random = Math.random();
         if(random <= 0.2){
-        alert("2000 satır kod olduğundan dolayı. şuan tam 2250 satır kod. 2500 satırdan sonraya kadar bu duracak :) ufak bir paket kodu verelim kutlamak için: it234pkt11.İyi oynamalar oynayan kişi :) nasiplisin çünkü %20 olasılıkla bu yazı çıkıyor.");
+        alert("2000 satır kod olduğundan dolayı. şuan tam 2314 satır kod. 2500 satırdan sonraya kadar bu duracak :) ufak bir paket kodu verelim kutlamak için: it234pkt11.İyi oynamalar oynayan kişi :) nasiplisin çünkü %20 olasılıkla bu yazı çıkıyor.");
         }
     </script>
 </head>
@@ -282,6 +282,7 @@ background-repeat: no-repeat;
     <div id="hhtk">
         <p id="ha">Hamzayla Anlaşma:50 (Dost. 20'ın altında düşman olur.)</p>
         <button onclick="HS1()">Hamza merhaba.Biraz yardım edermisin. (%20 olasılıkla +2 itibar)</button>
+        <button onclick="HS2()">Hamza Sizin C şubesinin Kılıç taktiğini anlatırmısın?</button>
         <button onclick="SR3()">Görüşürüz</button>
         <p id="hcvp">Hamza: Merhaba Huzeyfe</p>
     </div>
@@ -321,6 +322,14 @@ background-repeat: no-repeat;
         <button onclick="ARS6()">Arda Sınıftaki herkes hakkında ne düşünüyorsun?</button>
         <button onclick="SR3()">Görüşürüz Arda</button>
         <p id="arcvp">Arda: Noldu Huzeyfe.</p>
+    </div>
+    <div id="strateji">
+        <img src="" alt="" id="rsm3">
+        <div id="bitti1">
+        <button onclick="STRA1()">Kılıçlıları öne gönderip yıprattıktan sonra saldır (kılıç bilgisi zorunlu)</button>
+        <button onclick="STRA2()">Okçular ile A şubesini yıprat.</button>
+        <button onclick="STRA3()">Süvarileri önde gönder.</button>
+        </div>
     </div>
     <div id="sonksm">
         <img src="akin3.png" alt="" id="rsm2">
@@ -365,6 +374,7 @@ background-repeat: no-repeat;
     var dia = 40;
     var cktm1 = "yk";
     var cktm2 = "yk";
+    var kilic = "yk";
     setInterval(function(){
         if((gun == 0 || gun == 6) && tklm2 == "yk"){
         console.log("bugün okul yok niye oynuyorsun? şaka şaka sadece okul olmadığından zil çalmadı.");
@@ -527,7 +537,7 @@ tiklama.play();
         }
         else if(pkt1.value == "akin1595"){
             if(navigator.userAgent.includes("Chrome")){
-                alert("Chrome mi kullanıyorsun? Chrome akın yaparken çökmesin :)git Firefox kullan .d");
+                alert("Chrome mi kullanıyorsun? Chrome akın yaparken çökmesin :)git Firefox kullan .d birde firefox kullanmıyorsan RAM'in bile belli hatta göstereyeyim: " + navigator.deviceMemory + "GB al bak.git verilerini seviyorsan Firefox kullan .d");
             }
             oy = 70;
     it = 40;
@@ -763,9 +773,51 @@ tiklama.play();
             document.getElementById("kcvp").innerHTML = "Kerem: Huzeyfe niye inat ettinde ambargo koydun daha paran yetmeden bak paran bitti.La havle vela kuvvete illa billahül aliyr ve azim.";
         }
     }
+    function STRA1(){
+        if(kilic == "evt"){
+            aguc -= 20;
+            document.getElementById("rsm3").src = "stra1.png";
+            document.getElementById("bitti1").style.display = "none";
+        }
+    }
+    function STRA2(){
+            aguc -= 8;
+            document.getElementById("rsm3").src = "stra2.png";
+            document.getElementById("bitti1").style.display = "none";
+    }
+    function STRA3(){
+        if(akinci == "evt"){
+            aguc -= 24;
+            document.getElementById("rsm3").src = "stra3.png";
+            document.getElementById("bitti1").style.display = "none";
+        }
+        else{
+            aguc -= 3;
+            document.getElementById("rsm3").src = "stra3.png";
+            document.getElementById("bitti1").style.display = "none";
+        }
+    }
     function FTH2(){
         var tiklama = new Audio("tiklama.mp3");
 tiklama.play();
+document.getElementById("i1").style.display = "none";
+            document.getElementById("i2").style.display = "none";
+            document.getElementById("dgr").style.display = "none";
+            document.getElementById("a1").style.display = "none";
+            document.getElementById("a2").style.display = "none";
+            document.getElementById("a3").style.display = "none";
+            document.getElementById("a4").style.display = "none";
+            document.getElementById("a5").style.display = "none";
+            document.getElementById("a6").style.display = "none";
+            document.getElementById("a7").style.display = "none";
+            document.getElementById("a8").style.display = "none";
+            document.getElementById("a9").style.display = "none";
+            document.getElementById("a10").style.display = "none";
+            document.getElementById("a11").style.display = "none";
+            document.getElementById("dstk1").style.display = "none";
+            document.getElementById("strateji").style.display = "block";
+setTimeout(function(){
+    document.getElementById("strateji").style.display = "none";
 var random13 = Math.random();
         if (random13 < (olslk * 0.01)){
             if (random13 < (olslk * 0.01) && dyk1 == "evt"){
@@ -790,10 +842,13 @@ var random13 = Math.random();
             document.getElementById("a7").style.display = "none";
             document.getElementById("a8").style.display = "none";
             document.getElementById("a9").style.display = "none";
+            document.getElementById("a10").style.display = "none";
+            document.getElementById("a11").style.display = "none";
             document.getElementById("dstk1").style.display = "none";
             document.getElementById("sonksm").style.display = "block";
             alert("Konuşma: Es-sultan Ahmet:B el-Hasım'ın Başkancağızı Huzeyfe bak yenildin :) ve YIKILDIN.");
         }
+            }, 10000);
     }
     function PUH1(){
         alert("Es-sultan Ahmet:Huzeyfe,Huzeyfe :) yeniden yükleyecekmisin ha? o zaman yükle ve tekrar yeneyim :) yada ben senin yerinede yüklerim bekle bir güne bakayım, " + gunyazi + " ah tamam yeniden yüklüyorum.");
@@ -1559,6 +1614,15 @@ if(ha >= 50 && random8 < 0.2){
 else{
     document.getElementById("hcvp").innerHTML = "Hamza: Hayır Huzeyfe.";
 }
+    }
+    function HS2(){
+            var tiklama = new Audio("tiklama.mp3");
+tiklama.play();
+kilic = "evt";
+    document.getElementById("hcvp").innerHTML = "Hamza: Olur Huzeyfe.Biz kılıçlı askerlerimizi önden saldırtıp mızraklıları yener ardından ise süvariler ile son darbeyi vururuz.";
+    var hmzrsm1 = document.createElement("img");
+    hmzrsm1.src = "egitim1.png";
+    document.getElementById("hhtk").appendChild(hmzrsm1);
     }
     function K1(){
         document.getElementById("krmk").style.display = "block";
