@@ -19,7 +19,7 @@ background-repeat: no-repeat;
             background-color: aqua;
             border-radius: 10%;
         }
-        #krmk,#omrk,#mhtk, #hhtk, #yhtk, #fdiv, #bdiv, #adiv{
+        #krmk,#omrk,#mhtk, #hhtk, #yhtk, #fdiv, #bdiv, #adiv, #ardiv{
             display: none;
             font-weight:600;
             font-size: 14px;
@@ -97,7 +97,7 @@ background-repeat: no-repeat;
         //}
         var random = Math.random();
         if(random <= 0.2){
-        alert("2000 satır kod olduğundan dolayı. şuan tam 2122 satır kod. 2500 satırdan sonraya kadar bu duracak :) ufak bir paket kodu verelim kutlamak için: it234pkt11.İyi oynamalar oynayan kişi :) nasiplisin çünkü %20 olasılıkla bu yazı çıkıyor.");
+        alert("2000 satır kod olduğundan dolayı. şuan tam 2250 satır kod. 2500 satırdan sonraya kadar bu duracak :) ufak bir paket kodu verelim kutlamak için: it234pkt11.İyi oynamalar oynayan kişi :) nasiplisin çünkü %20 olasılıkla bu yazı çıkıyor.");
         }
     </script>
 </head>
@@ -235,6 +235,7 @@ background-repeat: no-repeat;
         <button onclick="F1()">Furkan'la Konuş</button>
         <button onclick="B1()">Berfin Hocayla Konuş</button>
         <button onclick="AB1()">Abdurrahman Hocayla Konuş</button>
+        <button onclick="AR1()">Arday'la Konuş</button>
     </div>
     <div id="krmk">
         <img src="krmrsm1.png" alt="" id="rsm">
@@ -246,6 +247,7 @@ background-repeat: no-repeat;
         <button onclick="SR6K()">Kerem Senden Adam Madam olmaz (Kerem -3, Yağız +2,Hamza -1,Hocalarla Anlaşma -2,İtibar +3)</button>
         <button onclick="SR7K()">Kerem Bana Yazılım Öğretirmisin? (öğrenirsen: Hocalarla Anlaşma +15%,İtibar +8)</button>
         <button onclick="SR8K()">Kerem Birlikte Proje Yapalım mı? (başarırsan: +8 Kerem ile anlaşma,+3 hocalarla anlaşma,+1 itibar, +4 oy)</button>
+        <button onclick="SR9K()">Kerem C şubesi mi E şubesi mi</button>
         <button onclick="SR4K()">3D Yazıcıdan Yıldız Modelleri Çıkarırmısın? (+1 itibar, +4 oy, +3 hocalarla anlaşma, -250 para)</button>
         <button onclick="SR3()">Görüşürüz</button>
         <p id="kcvp">Kerem: </p>
@@ -286,8 +288,8 @@ background-repeat: no-repeat;
     <div id="fdiv">
         <img src="furkanrsm1.png" alt="" id="rsm">
         <p id="fa">Furkanla Anlaşma:25 (Ortalama. 20'ın altında düşman olur.)</p>
-        <button onclick="FS1()">Furkan sen çok örnek bir öğrencisin (-8% hocalarla anlaşma .d,-2 itibar +2 Furkanla anlaşma, +1 Yağızla Anlaşma.).</button>
-        <button onclick="FS2()">Furkan uslu dur (+2% hocalarla anlaşma, +2 itibar -3 Furkanla anlaşma.).</button>
+        <button onclick="FS1()">Furkan sen çok örnek bir öğrencisin (-8% hocalarla anlaşma .d,-2 itibar +2 Furkanla anlaşma, +1 Yağızla Anlaşma, +1 Ardayla anlaşma.).</button>
+        <button onclick="FS2()">Furkan uslu dur (+2% hocalarla anlaşma, +2 itibar -3 Furkanla anlaşma, -2 Ardayla anlaşma.).</button>
         <button onclick="FS3()">Furkan yardım edermisin? (-10% hocalarla anlaşma, +3 itibar minimum 90 Furkanla anlaşma.)</button>
         <button onclick="FS4()">Furkan en sevmediğin hoca kim?</button>
         <button onclick="SR3()">Görüşürüz Furkan</button>
@@ -302,12 +304,23 @@ background-repeat: no-repeat;
     <div id="adiv">
         <div id="kzmd1">
         <button onclick="AS1()">Onu Tacettin hocaya şikayet et.</button>
-        <button onclick="AS2()">Hocam Tarık bin Ziyad'ın Bağdat seferini anlamadım.</button>
+        <button onclick="AS2()">Hocam Tarık bin Ziyad'ın Bağdat seferini anlamadım.</button> <!--yok hatta Hocam ben Fatih Sultan Mehmet'in 451 yılındaki finlandiya seferini hiç anlamadım diyelim .d-->
         <button onclick="AS3()">Hocam Siz çok iyi bir hocasınız.</button>
         <button onclick="SR3()">Görüşürüz Hocam</button>
         </div>
         <button onclick="OZR1()" id="kzd2">Özür dilerim hocam. (-4 itibar)</button>
         <p id="acvp">Abdurrahman Hoca: Noldu.</p>
+    </div>
+    <div id="ardiv">
+        <p id="aa">Ardayla anlaşma: 22 (20'nin altına düşerse düşman olur.)</p>
+        <button onclick="ARS1()">Arda Nasılsın.</button>
+        <button onclick="ARS2()">Arda Yardım edermisin? (70 üzeri ise anlaşma).</button>
+        <button onclick="ARS3()">Arda Keremden adam madam olmaz. (-2 kerem ile anlaşma,+1 Ardayla anlaşma)</button>
+        <button onclick="ARS4()">Arda senden adam madam olmaz. (+2 kerem ile anlaşma,-3 Ardayla anlaşma)</button>
+        <button onclick="ARS5()">Arda en sevmediğin hoca kim?</button>
+        <button onclick="ARS6()">Arda Sınıftaki herkes hakkında ne düşünüyorsun?</button>
+        <button onclick="SR3()">Görüşürüz Arda</button>
+        <p id="arcvp">Arda: Noldu Huzeyfe.</p>
     </div>
     <div id="sonksm">
         <img src="akin3.png" alt="" id="rsm2">
@@ -339,6 +352,7 @@ background-repeat: no-repeat;
     var tklm2 = "yk";
     var prj1 = "yk";
     var date = new Date();
+    var aa = 22;
     var gun = date.getDay();
     var ay = date.getMonth();
     var yil = date.getFullYear();
@@ -885,6 +899,98 @@ tiklama.play();
         document.getElementById("hi").innerHTML = hi + "%";
         document.getElementById("dstk1").style.display = "none";
     }
+    //<button onclick="ARS1()">Arda Nasılsın.</button>
+        //<button onclick="ARS2()">Arda Yardım edermisin? (70 üzeri ise anlaşma).</button>
+        //<button onclick="ARS3()">Arda Keremden adam madam olmaz. (-2 kerem ile anlaşma,+1 Ardayla anlaşma)</button>
+        //<button onclick="ARS4()">Arda senden adam madam olmaz. (+2 kerem ile anlaşma,-3 Ardayla anlaşma)</button>
+        function ARS1(){
+        var tiklama = new Audio("tiklama.mp3");
+tiklama.play();
+if(aa < 20){
+            document.getElementById("arcvp").innerHTML = "Arda: Lan Huzeyfe sanane.";
+}
+else if(aa >= 20 && aa <= 70){
+            document.getElementById("arcvp").innerHTML = "Arda: eh işte.";
+}
+else if(aa > 70){
+            document.getElementById("arcvp").innerHTML = "Arda: İyi huzeyfe.";
+}
+    }
+    function ARS2(){
+        var tiklama = new Audio("tiklama.mp3");
+tiklama.play();
+if(aa < 20){
+            document.getElementById("arcvp").innerHTML = "Arda: Yallah Huzeyfe elini yala.";
+}
+else if(aa >= 20 && aa <= 70){
+            document.getElementById("arcvp").innerHTML = "Arda: yok ya huzeyfe.";
+}
+else if(aa > 70){
+            document.getElementById("arcvp").innerHTML = "Arda: Tamam Huzeyfe.";
+            hi -= 5;
+            it += 3;
+            document.getElementById("it").innerHTML = it;
+document.getElementById("hi").innerHTML = hi + "%";
+}
+    }
+    function ARS3(){
+        var tiklama = new Audio("tiklama.mp3");
+tiklama.play();
+ki -= 2;
+aa += 1;
+document.getElementById("aa").innerHTML = aa;
+document.getElementById("ka").innerHTML = ki;
+if(aa < 20){
+            document.getElementById("arcvp").innerHTML = "Arda: Evet aynı senin gibi.ama neyse Huzeyfe bunu beğendim o da çok bilgili bi susmuyor.";
+}
+else if(aa >= 20){
+            document.getElementById("arcvp").innerHTML = "Arda: Evet Huzeyfe napalım ki?.";
+}
+    }
+    function ARS4(){
+        var tiklama = new Audio("tiklama.mp3");
+tiklama.play();
+ki += 2;
+aa -= 3;
+document.getElementById("aa").innerHTML = aa;
+document.getElementById("ka").innerHTML = ki;
+if(aa < 20){
+            document.getElementById("arcvp").innerHTML = "Arda: Hadi Yallah Huzeyfe asıl senden olmaz adam.";
+}
+else if(aa >= 20 && aa <= 70){
+            document.getElementById("arcvp").innerHTML = "Arda: Ya Huzeyfe bi git.";
+}
+else if(aa > 70){
+            document.getElementById("arcvp").innerHTML = "Arda: Niye dedin ki huzeyfe?.";
+}
+    }
+    function ARS5(){
+        var tiklama = new Audio("tiklama.mp3");
+tiklama.play();
+hi -= 1;
+document.getElementById("hi").innerHTML = hi;
+if(aa < 20){
+            document.getElementById("arcvp").innerHTML = "Arda: sanane.";
+}
+else if(aa >= 20 && aa <= 70){
+            document.getElementById("arcvp").innerHTML = "Arda: Hatice hoca ve Mehtap hoca.";
+}
+else if(aa > 70){
+            document.getElementById("arcvp").innerHTML = "Arda: Hatice hoca,Mehtap hoca,Sebil hoca... böyle gidiyor işte liste huzeyfe :)";
+}
+    }
+    function ARS6(){
+        var tiklama = new Audio("tiklama.mp3");
+tiklama.play();
+hi -= 2;
+document.getElementById("hi").innerHTML = hi;
+if(aa < 20){
+            document.getElementById("arcvp").innerHTML = "Arda: sanane.";
+}
+else if(aa >= 20){
+            document.getElementById("arcvp").innerHTML = "Arda: birkaç tane söyleyeyim: \n Normal NPC'leri biliyordursun zaten ve öbür adı geçenleri 1)Eymen Taha: ya tam anlayamadım gitti onuda garip birisi işte ama KAĞITTAN TELEFON YAPIP SATIYOR KAĞITTAN BRAWSTARS KARAKTERLERİ YAPMIŞ SATIYOR ZORTSTARS DİYE neyse \n 2)Eymen Ali:yaramazın teki işte \n 3) Ömer Kürşat: Eymen Ali ile aynı sırada oturuyor Eymen Alinin suç ortağı .d \n 4) Çınar:Yapay zekadan oyun yapıp yaptım yaptım diyo \n 5)Kerem k. : Kerem değil bu başka kerem bu da yapay zekadan oyun yapıyor yaptım diyor \n 6)Ahmet Efe:Yaramaz biri işte sağı solu belli değil \n 7)Muhammet Emin : baya uslu çocuk sınıfın en uslu çocuğu \n 8)Muhammet Remzi:hiç bir fikrim yok.daha varda sayasım yok.";
+}
+    }
     function AS1(){
         var tiklama = new Audio("tiklama.mp3");
 tiklama.play();
@@ -1259,6 +1365,11 @@ uyglm1 = "Klasik C";
         },5000);
         }
     }
+    function SR9K(){
+        var tiklama = new Audio("tiklama.mp3");
+tiklama.play();
+            document.getElementById("kcvp").innerHTML = 'Kerem: E şubesi.Çünkü bir çok arkadaşım orda.';
+    }
     function SR1O(){
         var tiklama = new Audio("tiklama.mp3");
 tiklama.play();
@@ -1458,6 +1569,7 @@ else{
         document.getElementById("mhtk").style.display = "none";
         document.getElementById("fdiv").style.display = "none";
         document.getElementById("adiv").style.display = "none";
+        document.getElementById("ardiv").style.display = "none";
         if (esegim == "o" && ki <= 50){
             document.getElementById("kcvp").innerHTML = "Kerem: HAİN HUZEYFE ARKAMDAN İŞLER ÇEVİRMİŞSİN!YÜRÜ GİT ŞİMDİ.";
             esegim = "y";
@@ -1466,6 +1578,7 @@ else{
         document.getElementById("yhtk").style.display = "none";
         document.getElementById("omrk").style.display = "none";
         document.getElementById("bdiv").style.display = "none";
+        document.getElementById("ardiv").style.display = "none";
         document.getElementById("mhtk").style.display = "none";
         document.getElementById("fdiv").style.display = "none";
         document.getElementById("adiv").style.display = "none";
@@ -1479,6 +1592,7 @@ document.getElementById("krmk").style.display = "none";
         document.getElementById("krmk").style.display = "block";
         document.getElementById("hhtk").style.display = "none";
         document.getElementById("yhtk").style.display = "none";
+        document.getElementById("ardiv").style.display = "none";
         document.getElementById("adiv").style.display = "none";
         document.getElementById("bdiv").style.display = "none";
         document.getElementById("omrk").style.display = "none";
@@ -1490,6 +1604,7 @@ document.getElementById("krmk").style.display = "none";
         document.getElementById("krmk").style.display = "block";
         document.getElementById("hhtk").style.display = "none";
         document.getElementById("yhtk").style.display = "none";
+        document.getElementById("ardiv").style.display = "none";
         document.getElementById("omrk").style.display = "none";
         document.getElementById("bdiv").style.display = "none";
         document.getElementById("mhtk").style.display = "none";
@@ -1504,6 +1619,7 @@ tiklama.play();
         document.getElementById("hhtk").style.display = "none";
         document.getElementById("yhtk").style.display = "none";
         document.getElementById("omrk").style.display = "block";
+        document.getElementById("ardiv").style.display = "none";
         document.getElementById("mhtk").style.display = "none";
         document.getElementById("adiv").style.display = "none";
         document.getElementById("bdiv").style.display = "none";
@@ -1513,7 +1629,7 @@ tiklama.play();
         document.getElementById("krmk").style.display = "none";
         document.getElementById("hhtk").style.display = "none";
         document.getElementById("yhtk").style.display = "none";
-        document.getElementById("omrk").style.display = "block";
+        document.getElementById("omrk").style.display = "block";document.getElementById("ardiv").style.display = "none";
         document.getElementById("bdiv").style.display = "none";
         document.getElementById("mhtk").style.display = "none";
         document.getElementById("fdiv").style.display = "none";
@@ -1525,7 +1641,7 @@ tiklama.play();
 tiklama.play();
         document.getElementById("krmk").style.display = "none";
         document.getElementById("hhtk").style.display = "none";
-        document.getElementById("yhtk").style.display = "none";
+        document.getElementById("yhtk").style.display = "none";document.getElementById("ardiv").style.display = "none";
         document.getElementById("omrk").style.display = "none";
         document.getElementById("adiv").style.display = "none";
         document.getElementById("mhtk").style.display = "block";
@@ -1538,7 +1654,7 @@ tiklama.play();
         document.getElementById("krmk").style.display = "none";
         document.getElementById("hhtk").style.display = "none";
         document.getElementById("yhtk").style.display = "block";
-        document.getElementById("omrk").style.display = "none";
+        document.getElementById("omrk").style.display = "none";document.getElementById("ardiv").style.display = "none";
         document.getElementById("adiv").style.display = "none";
         document.getElementById("mhtk").style.display = "none";
         document.getElementById("fdiv").style.display = "none";
@@ -1548,7 +1664,7 @@ tiklama.play();
         document.getElementById("krmk").style.display = "none";
         document.getElementById("hhtk").style.display = "none";
         document.getElementById("yhtk").style.display = "block";
-        document.getElementById("bdiv").style.display = "none";
+        document.getElementById("bdiv").style.display = "none";document.getElementById("ardiv").style.display = "none";
         document.getElementById("adiv").style.display = "none";
         document.getElementById("omrk").style.display = "none";
         document.getElementById("mhtk").style.display = "none";
@@ -1559,7 +1675,7 @@ tiklama.play();
             var tiklama = new Audio("tiklama.mp3");
 tiklama.play();
         document.getElementById("krmk").style.display = "none";
-        document.getElementById("hhtk").style.display = "block";
+        document.getElementById("hhtk").style.display = "block";document.getElementById("ardiv").style.display = "none";
         document.getElementById("bdiv").style.display = "none";
         document.getElementById("yhtk").style.display = "none";
         document.getElementById("omrk").style.display = "none";
@@ -1576,7 +1692,7 @@ tiklama.play();
         document.getElementById("mhtk").style.display = "none";
         document.getElementById("yhtk").style.display = "none";
         document.getElementById("hhtk").style.display = "none";
-        document.getElementById("bdiv").style.display = "none";
+        document.getElementById("bdiv").style.display = "none";document.getElementById("ardiv").style.display = "none";
         document.getElementById("fdiv").style.display = "none";
     }
     function F1(){
@@ -1588,7 +1704,7 @@ tiklama.play();
         document.getElementById("bdiv").style.display = "none";
         document.getElementById("adiv").style.display = "none";
         document.getElementById("yhtk").style.display = "none";
-        document.getElementById("hhtk").style.display = "none";
+        document.getElementById("hhtk").style.display = "none";document.getElementById("ardiv").style.display = "none";
         document.getElementById("fdiv").style.display = "block";
         if (fa >= 80){
             document.getElementById("fcvp").innerHTML = "Furkan:he ne diyon huzeyfe.";
@@ -1596,7 +1712,7 @@ tiklama.play();
         document.getElementById("hhtk").style.display = "none";
         document.getElementById("yhtk").style.display = "none";
         document.getElementById("adiv").style.display = "none";
-        document.getElementById("omrk").style.display = "none";
+        document.getElementById("omrk").style.display = "none";document.getElementById("ardiv").style.display = "none";
         document.getElementById("bdiv").style.display = "none";
         document.getElementById("mhtk").style.display = "none";
         document.getElementById("fdiv").style.display = "block";
@@ -1610,7 +1726,19 @@ tiklama.play();
         document.getElementById("mhtk").style.display = "none";
         document.getElementById("bdiv").style.display = "block";
         document.getElementById("yhtk").style.display = "none";
-        document.getElementById("hhtk").style.display = "none";
+        document.getElementById("hhtk").style.display = "none";document.getElementById("ardiv").style.display = "none";
+        document.getElementById("adiv").style.display = "none";
+        document.getElementById("fdiv").style.display = "none";
+    }
+    function AR1(){
+        var tiklama = new Audio("tiklama.mp3");
+tiklama.play();
+        document.getElementById("krmk").style.display = "none";
+        document.getElementById("omrk").style.display = "none";
+        document.getElementById("mhtk").style.display = "none";
+        document.getElementById("bdiv").style.display = "none";
+        document.getElementById("yhtk").style.display = "none";
+        document.getElementById("hhtk").style.display = "none";document.getElementById("ardiv").style.display = "block";
         document.getElementById("adiv").style.display = "none";
         document.getElementById("fdiv").style.display = "none";
     }
@@ -1620,7 +1748,7 @@ tiklama.play();
 var random12 = Math.random();
         document.getElementById("krmk").style.display = "none";
         document.getElementById("omrk").style.display = "none";
-        document.getElementById("mhtk").style.display = "none";
+        document.getElementById("mhtk").style.display = "none";document.getElementById("ardiv").style.display = "none";
         document.getElementById("bdiv").style.display = "none";
         document.getElementById("yhtk").style.display = "none";
         document.getElementById("hhtk").style.display = "none";
