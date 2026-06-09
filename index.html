@@ -14,7 +14,7 @@ background-repeat: no-repeat;
         #ayr1, #kzd2, #sonksm{
             display: none;
         }
-        #a1,#a2,#a3,#a4,#a5,#a6,#a7,#a8, #a9, #a10, #tnfs{
+        #a1,#a2,#a3,#a4,#a5,#a6,#a7,#a8, #a9, #a10, #tnfs, #dstk1, #a11{
             display: none;
             background-color: aqua;
             border-radius: 10%;
@@ -97,7 +97,7 @@ background-repeat: no-repeat;
         //}
         var random = Math.random();
         if(random <= 0.2){
-        alert("2000 satır kod olduğundan dolayı. şuan tam 2028 satır kod. 2500 satırdan sonraya kadar bu duracak :) ufak bir paket kodu verelim kutlamak için: it234pkt11.İyi oynamalar oynayan kişi :) nasiplisin çünkü %20 olasılıkla bu yazı çıkıyor.");
+        alert("2000 satır kod olduğundan dolayı. şuan tam 2122 satır kod. 2500 satırdan sonraya kadar bu duracak :) ufak bir paket kodu verelim kutlamak için: it234pkt11.İyi oynamalar oynayan kişi :) nasiplisin çünkü %20 olasılıkla bu yazı çıkıyor.");
         }
     </script>
 </head>
@@ -134,8 +134,11 @@ background-repeat: no-repeat;
         <button onclick="H()" id="buttoncss">Sende Yaramazlık Yap :) (+5% oy, -1 itibar, -5% hocalarla anlaşma)</button> <br>
         <button onclick="Ç()" id="buttoncss">Sınıf Seçimine Hazırlan (+7% oy, -1 itibar, -5% hocalarla anlaşma)</button> <br>
         <button onclick="KTP()" id="buttoncss">Ömer Tahadan Kitap Satın Al (-50 Para,+2 hocalarla anlaşma)</button> <br>
-        <button onclick="PRGL()" id="buttoncss">Pergelli Akıncılarını A şubesine gönder (akıncı paketin yoksa gönderemezsin ve minimum 20 itibar ile minimum 60 oy gerekir,-20 hocalarla anlaşma ama -3 A şubesinin gücü,+400 puan)</button>
-        <button onclick="FTH2()" id="buttoncss">A şubesine büyük sefer düzenle (olasılık = A şubesinin gücü bölü 3 artı İtibarın çarpı 2.5 son olarak bölü 2,kazanırsan oyunuda kazanırsıni,kaybedersen oyunuda kaybedersin .d)</button>
+        <button onclick="PRGL()" id="buttoncss">Pergelli Akıncılarını A şubesine gönder (akıncı paketin yoksa gönderemezsin ve minimum 20 itibar ile minimum 60 oy gerekir,-20 hocalarla anlaşma ama -3 A şubesinin gücü,+400 puan)</button> <br>
+        <button onclick="AKAC1()" id="buttoncss">A şubesine ambargo koy (-4 oy, +3 itibar, -12% hocalarla anlaşma, -3 A güç,-800 para)</button> <br>
+        <button onclick="AKAC2()" id="buttoncss">D şubesini öv (-2 oy, +1 D şubesi ile anlaşma)</button> <br>
+        <button onclick="AKAC3()" id="buttoncss">D şubesine ittifak teklif et (D şubesi ile anlaşma bölü 2 % olasılıkla evet cevabı alınır, +8 itibar, -10 A şubesinin gücü)</button> <br>
+        <button onclick="FTH2()" id="buttoncss">A şubesine büyük sefer düzenle (olasılık = A şubesinin gücü bölü 2 artı İtibarın çarpı 2 son olarak bölü 2,kazanırsan oyunuda kazanırsıni,kaybedersen oyunuda kaybedersin .d)</button>
     </div>
     <div id="a1">
         <h4 id="yrmz">Furkan ve Ali Kemal Birlikte Yaramazlık Yaptı</h4>
@@ -197,6 +200,19 @@ background-repeat: no-repeat;
         <button onclick="ELSTR1()" id="buttoncss">Eleştir. (+2 yağız ile anlaşma, -1 kerem ile anlaşma)</button>
     </div>
     <div id="a10">
+        <h4 id="brkvekrm">Kerem ve Ahmet Burak (es-sultan ahmet değil.) birlikte bir proje yaptı.</h4>
+        <button onclick="DSTK1()" id="buttoncss">onları Destekle.(Kerem ile anlaşma +2, yağız ile anlaşma -1)</button>
+        <button onclick="ELSTR1()" id="buttoncss">onları Eleştir. (+2 yağız ile anlaşma, -1 kerem ile anlaşma)</button>
+    </div>
+    <div id="a11">
+        <h4 id="nee">D şubesinden bir insan YENİ ELEMENT KEŞFETTİ!</h4>
+        <p>Açıklama: <br> Element Adı:Dşubesiyum <br> Özellikleri: <br> 1)Hafif reaktif 40 saniye boyu onun tepkimeye girebileceği sıvılarda kalınca hafif bir patlama oluşturur (kimseye zarar gelmez sadece çok kısa süreli bir ateş yukarıya çıkar tepkimeye 0pH'ın altındaki bazı sıvılarla girer) <br> 2)Yarıiletkenlik:Klasik yarıiletkenlik ancak pH'a göre iletmesi değişir bazik sıvıda artarken asidik sıvıda azalır sıcakta azalırken soğukta artar ışık varken azalırken ışık yokken artar <br> 3)Radyoaktiviteyi hapsetme:Kurşun kadar olmasada radyoaktiviteyi hapseder. <br> 4)Fosfor gibi karanlıkta ışık yayma <br> 5)BS₂C₅Li formulü ile Kimyasal enerjisini hızla elektrik enerjisine çevirir <br> 6)Işık üretimi:10w'da ışık üretir ve bu ışık parlaktır ve rengi molekürüne göre değişir. <br> 7) yapan kişinin adı Timur ali.</p>
+        <button onclick="NECVP1()" id="buttoncss">Tebrik et (-3 oy, -1 itibar, +5 hocalarla anlaşma)</button>
+        <button onclick="NECVP1()" id="buttoncss">Birlikte geliştirelim de (+4 oy, +2 itibar, +9 hocalarla anlaşma)</button>
+        <button onclick="NECVP1()" id="buttoncss">Bune yav saçma sapan birşey de. (-3 oy, +3 itibar, -20 hocalarla anlaşma)</button>
+        <button onclick="NECVP2()" id="buttoncss">Keremle birlikte yaparız de. (+4 Keremle anlaşma, -2 yağızla anlaşma, +4 oy, +2 itibar, +4 hocalarla anlaşma.)</button>
+    </div>
+    <div id="dstk1">
         <h4 id="tvsy">Şansına İtibarın Çok Azaldığından Tacettin Hoca Sana Görev Verdi</h4>
         <button onclick="S61()" id="buttoncss">Kabul Et (-3% oy, +4 itibar, +5% hocalarla anlaşma)</button>
         <button onclick="S62()" id="buttoncss">Kabul Etme (+2% oy, -1 itibar, -2% hocalarla anlaşma)</button>
@@ -332,6 +348,9 @@ background-repeat: no-repeat;
     var olslk = ((it * 2.5) - (aguc / 3)) / 2;
     var yzlmdm = "yk";
     var dyk1 = "yk";
+    var dia = 40;
+    var cktm1 = "yk";
+    var cktm2 = "yk";
     setInterval(function(){
         if((gun == 0 || gun == 6) && tklm2 == "yk"){
         console.log("bugün okul yok niye oynuyorsun? şaka şaka sadece okul olmadığından zil çalmadı.");
@@ -446,6 +465,7 @@ tiklama.play();
         document.getElementById("a8").style.backgroundColor = document.getElementById("renk").value;
         document.getElementById("a9").style.backgroundColor = document.getElementById("renk").value;
         document.getElementById("a10").style.backgroundColor = document.getElementById("renk").value;
+        document.getElementById("a11").style.backgroundColor = document.getElementById("renk").value;
     }
     function PKT(){
         var tiklama = new Audio("tiklama.mp3");
@@ -493,7 +513,7 @@ tiklama.play();
         }
         else if(pkt1.value == "akin1595"){
             if(navigator.userAgent.includes("Chrome")){
-                alert("Chrome mi kullanıyorsun? Chrome akın yaparken çökmesin :)");
+                alert("Chrome mi kullanıyorsun? Chrome akın yaparken çökmesin :)git Firefox kullan .d");
             }
             oy = 70;
     it = 40;
@@ -509,6 +529,48 @@ tiklama.play();
     akinci = "evt";
         }
     }
+    function AKAC2(){
+        dia += 1;
+        oy -= 2;
+        document.getElementById("oy").innerHTML = oy + "%";
+    }
+    function AKAC3(){
+        var dia2 = dia / 2;
+        var random14 = Math.random();
+        if(random14 < dia2 * 0.01){
+            if(cktm2 == "evt"){
+            alert("İttifak halindesiniz ya?");
+        }
+        else{
+            alert("D şubesinin başkanı:İttifakınızı kabul ediyoruz.");
+            cktm2 = "evt";
+            it += 8;
+            aguc -= 10;
+            document.getElementById("it").innerHTML = it;
+            document.getElementById("kcvp").innerHTML = "Kerem: Huzeyfe, İttifak olmayı başardığın için tebrik ederim.";
+            document.getElementById("hcvp").innerHTML = "Hamza: Huzeyfe, C şubeside ittifak olmayı bekliyor.";
+        }
+        }
+        else{
+            dia -= 4;
+            alert("D Şubesinin başkanı:İttifakı reddediyoruz.");
+        }
+    }
+        function NECVP1(){
+            o = "y";
+            alert("şakaydı :) ve D Şubesi seni görmek için yaptı belkide?aslında yapmadı ama.");
+            cktm1 = "evt";
+        document.getElementById("a11").style.display = "none";
+        }
+        function NECVP2(){
+            alert("şakaydı :) ve D Şubesi seni görmek için yaptı belkide?Ama önemli olan şu:kerem buna rağmen yinede böyle dediğinden sevindi ve yağızda sorun olmaz diye düşündü yinede kazanan sensin :) maşAllah.");
+            ki += 4;
+            cktm1 = "evt";
+            o = "y";
+            document.getElementById("ka").innerHTML = ki;
+            document.getElementById("kcvp").innerHTML = "Kerem:Huzeyfe teşekkür ederim o haber yalan olsada :) istersen birlikte proje geliştirebiliriz ama.";
+        document.getElementById("a11").style.display = "none";
+        }
         function KNT(){
             if(pr1 >= 1000){
                 pr1 -= 1000;
@@ -552,7 +614,7 @@ tiklama.play();
         document.getElementById("kcvp").innerHTML = "Kerem: Vaybe, Huzeyfe gerçekten başarılı bir başkansın maşAllah A Şubesinin Fethi ne zaman :)";
         document.getElementById("ocvp").innerHTML = "Ömer Asaf:ben sana diyorum bak işe yarıyor";
         document.getElementById("mcvp").innerHTML = "Mahmut: Huzeyfe, yaptığın kötü birşey hocalarla aranı kötüleştirme";
-        console.log("Kerem:Mahmut torpillisin mahmut yalakasın MAHMUT.Mahmut:Kerem seni hocaya şikayet edeceğim.");
+        console.log("Kerem:Mahmut torpillisin mahmut yalakasın MAHMUT.Mahmut:Kerem seni hocaya şikayet edeceğim.Kerem: mahmut bak aramız iyi aramızı bozmayak yav.Mahmut:tamam kerem sorun olmaz :)");
         document.getElementById("hcvp").innerHTML = "Hamza: Deseydin ya Huzeyfe C şubesindekileri toplar birlikte akın yapardık :) hiç olmadı şu paket kodunu alda akın yaparken işine yarasın: akin1595";
         document.getElementById("fcvp").innerHTML = "Furkan: Hocaam huzeyfede yaramazlık yapıyoor.";
         document.getElementById("ycvp").innerHTML = "Yağız: Huzeyfe, biliyorsun bende türkçeyi senin kadar iyi biliyorum sırf canım istediğinden ingilizce konuşuyorum.Seni tebrik ederim huzeyfe.";
@@ -621,6 +683,7 @@ o = "y";
         document.getElementById("ya").innerHTML = yi;
         document.getElementById("ka").innerHTML = ki;
         document.getElementById("a9").style.display = "none";
+        document.getElementById("a10").style.display = "none";
         }
         function ELSTR1(){
             var tiklama = new Audio("tiklama.mp3");
@@ -631,6 +694,7 @@ o = "y";
         document.getElementById("ya").innerHTML = yi;
         document.getElementById("ka").innerHTML = ki;
         document.getElementById("a9").style.display = "none";
+        document.getElementById("a10").style.display = "none";
         }
     function KTP(){
         var tiklama = new Audio("tiklama.mp3");
@@ -660,6 +724,31 @@ tiklama.play();
             document.getElementById("kcvp").innerHTML = "Kerem: Huzeyfe Allah bilir kimi yolladın :) olmayan akıncıyı mı yolladın :)";
         }
     }
+    //<button onclick="AKAC1()" id="buttoncss">A şubesine birşey satma koy (-4 oy, +3 itibar, -12% hocalarla anlaşma, -3 A güç,-800 para)</button>
+    function AKAC1(){
+        var tiklama = new Audio("tiklama.mp3");
+tiklama.play();
+        if (pr1 >= 800){
+            hi -= 12;
+            aguc -= 3;
+            pr1 -= 800;
+            ki -= 1;
+            oy -= 4;
+            it += 3;
+            document.getElementById("hi").innerHTML = hi + "%";
+            document.getElementById("oy").innerHTML = oy + "%";
+            document.getElementById("it").innerHTML = it;
+            document.getElementById("ka").innerHTML = ki;
+            document.getElementById("kcvp").innerHTML = "Kerem: Huzeyfe Ambargoyu kaldırmalısın.Çünkü yıldız modellerini onlara satamıyorum.Hem sınıfın ekonomisi Allah korusun bozulur.";
+            document.getElementById("pr").innerHTML = "Para: " + pr1;
+        }
+        else{
+            pr1 = 0;
+            ki -= 2;
+            document.getElementById("ka").innerHTML = ki;
+            document.getElementById("kcvp").innerHTML = "Kerem: Huzeyfe niye inat ettinde ambargo koydun daha paran yetmeden bak paran bitti.La havle vela kuvvete illa billahül aliyr ve azim.";
+        }
+    }
     function FTH2(){
         var tiklama = new Audio("tiklama.mp3");
 tiklama.play();
@@ -687,7 +776,7 @@ var random13 = Math.random();
             document.getElementById("a7").style.display = "none";
             document.getElementById("a8").style.display = "none";
             document.getElementById("a9").style.display = "none";
-            document.getElementById("a10").style.display = "none";
+            document.getElementById("dstk1").style.display = "none";
             document.getElementById("sonksm").style.display = "block";
             alert("Konuşma: Es-sultan Ahmet:B el-Hasım'ın Başkancağızı Huzeyfe bak yenildin :) ve YIKILDIN.");
         }
@@ -770,7 +859,7 @@ tiklama.play();
         document.getElementById("it").innerHTML = it;
         document.getElementById("oy").innerHTML = oy + "%";
         document.getElementById("hi").innerHTML = hi + "%";
-        document.getElementById("a10").style.display = "none";
+        document.getElementById("dstk1").style.display = "none";
     }
     function S62(){
         var tiklama = new Audio("tiklama.mp3");
@@ -782,7 +871,7 @@ tiklama.play();
         document.getElementById("it").innerHTML = it;
         document.getElementById("oy").innerHTML = oy + "%";
         document.getElementById("hi").innerHTML = hi + "%";
-        document.getElementById("a10").style.display = "none";
+        document.getElementById("dstk1").style.display = "none";
     }
     function S63(){
         var tiklama = new Audio("tiklama.mp3");
@@ -794,7 +883,7 @@ tiklama.play();
         document.getElementById("it").innerHTML = it;
         document.getElementById("oy").innerHTML = oy + "%";
         document.getElementById("hi").innerHTML = hi + "%";
-        document.getElementById("a10").style.display = "none";
+        document.getElementById("dstk1").style.display = "none";
     }
     function AS1(){
         var tiklama = new Audio("tiklama.mp3");
@@ -1689,13 +1778,18 @@ tiklama.play();
         document.getElementById("oy").innerHTML = oy + "%";
         document.getElementById("hi").innerHTML = hi + "%";
     }
-    //bak sen burayı çok arıyon kerem adlı varlık .d burda 1603'de aklında 1595 gelsin .d
+    //bak sen burayı çok arıyon kerem adlı varlık .d burda 1724'de aklında 1700'lerden gelsin .d
     setInterval(function(){
         pr1 += 1;
         document.getElementById("pr").textContent = "Para: " + pr1;
         if(o == "y"){
             o = "n";
-        var rnd = Math.floor(Math.random()* 9) + 1;
+            if(cktm1 == "evt"){
+                var rnd = Math.floor(Math.random()* 10) + 1;
+            }
+            else{
+        var rnd = Math.floor(Math.random()* 11) + 1;
+            }
         if((rnd == 4 && it >= 50) && (prj1 == "evt" || prj1 == "vr")){
         rnd = 9;
         }
@@ -1705,7 +1799,7 @@ tiklama.play();
         document.getElementById("a" + rnd).style.display = "block";
         }
         if(it <= 5 && hi >= 55){
-            document.getElementById("a10").style.display = "block";
+            document.getElementById("dstk1").style.display = "block";
         }
     }, 50);
     function S1(){
@@ -1984,7 +2078,7 @@ tiklama.play();
                 document.getElementById("it").style.height = it * 2 + "px";
         document.getElementById("hi").style.height = hi * 2  + "px";
         document.getElementById("oy").style.height = oy * 2  + "px";
-        olslk = ((it * 2.5) - (aguc / 3)) / 2;
+        olslk = ((it * 2) - (aguc / 2)) / 2;
         if (zormu == "yes"){
 if(oy >= 180 && it >= 80 && hi >= 120){
 alert("Tebrikler...bunu nasıl başardın? kaç saat uğraştın?tekrar tebrik ederim bu zor olmalıydı.ondan önce paketinin adı:snfbskn2026 bu paket sığınak stra'da bile çalışıyor.Yani birçok paket olan oyunlarda inşAllah ekleyeceğim bu paketide sakın unutma.Ve.. ve ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3ssmb3ssmb3ssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3ssmb3ssmb3ssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3ssmb3ssmb3ssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3ssmb3ssmb3ssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3ssmb3ssmb3ssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3ssmb3ssmb3ssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3ssmb3ssmb3ssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3ssmb3ssmb3ssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3ssmb3ssmb3ssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3ssmb3ssmb3ssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3ssmb3ssmb3ssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3ssmb3ssmb3ssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3ssmb3ssmb3ssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3ssmb3ssmb3ssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3ssmb3ssmb3ssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3ssmb3ssmb3ssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3ssmb3ssmb3ssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3ssmb3ssmb3ssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3ssmb3ssmb3ssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3ssmb3ssmb3ssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3ssmb3ssmb3ssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3ssmb3ssmb3ssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3ssmb3ssmb3ssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3ssmb3ssmb3ssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3ssmb3ssmb3ssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3ssmb3ssmb3ssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3ssmb3ssmb3ssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3ssmb3ssmb3ssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3ssmb3ssmb3ssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3ssmb3ssmb3ssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3ssmb3ssmb3ssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3sssmb3ssmb3^ssmb3ssmb3sssmb3ssmb3sssmb3sssmb3ssmb3sssmb3.çevirebilirsen.");
